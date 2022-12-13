@@ -1,0 +1,18 @@
+.job-offer {
+  background-color: #1e73be;
+  color: $color-black;
+  .job-offer__container {
+    margin-top: 80px;
+    padding: 80px 15px;
+    h2 {
+      color: $color-white;
+    }
+
+    .job-offer__card {
+      background-color: $color-white;
+      h6 {
+        text-transform: uppercase;
+      }
+    }
+  }
+}

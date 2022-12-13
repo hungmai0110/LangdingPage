@@ -1,0 +1,52 @@
+.job-info {
+  .container {
+    .job-info__container {
+      padding: 110px 0;
+      display: flex;
+
+      .job-info__card {
+        margin: 0 15px;
+        color: $color-white;
+        padding: 20px 100px 20px 20px;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .job-info_content {
+          p {
+            padding: 10px 55px 10px 0;
+            font-size: 13px;
+          }
+        }
+
+        .btn__view {
+          color: $color-white;
+          padding: 10px 15px;
+          border-radius: 3px;
+          width: 40%;
+          text-align: center;
+          font-size: 13px;
+        }
+
+        .btn__view--blue {
+          background-color: rgba(25, 25, 25, 0.1);
+        }
+        .btn__view--black {
+          background-color: #454646;
+        }
+        .btn__view--purple {
+          background-color: rgba(25, 25, 25, 0.1);
+        }
+      }
+
+      .job-info__card--career {
+        background-image: url(http://jobcareer.chimpgroup.com/jobstreet/wp-content/uploads/jobstreet-services-01.jpg);
+      }
+      .job-info__card--member {
+        background-image: url(http://jobcareer.chimpgroup.com/jobstreet/wp-content/uploads/jobstreet-services-02.jpg);
+      }
+      .job-info__card--post {
+        background-image: url(http://jobcareer.chimpgroup.com/jobstreet/wp-content/uploads/jobstreet-services-03.jpg);
+      }
+    }
+  }
+}
