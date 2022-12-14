@@ -145,7 +145,8 @@ header {
     .job-offer .job-offer__container h2 {
       color: #fff; }
     .job-offer .job-offer__container .job-offer__card {
-      background-color: #fff; }
+      background-color: #fff;
+      margin-right: 20px; }
       .job-offer .job-offer__container .job-offer__card h6 {
         text-transform: uppercase; }
 
