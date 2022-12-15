@@ -7,12 +7,65 @@
     h2 {
       color: $color-white;
     }
+    .job-offer__list {
+      position: relative;
+      margin-top: 20px;
+      .slick-prev {
+        position: absolute;
+        top: 50%;
+        left: -56px;
+        transform: translateY(-50%);
+        background-color: #1e73be;
+        padding: 6px 14px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        color: #fff;
+      }
+      .slick-next {
+        position: absolute;
+        top: 50%;
+        right: -40px;
+        transform: translateY(-50%);
+        background-color: #1e73be;
+        padding: 6px 14px;
+        border-radius: 50%;
+        color: #fff;
+        border: 1px solid #fff;
+      }
 
-    .job-offer__card {
-      background-color: $color-white;
-      margin-right: 20px;
-      h6 {
-        text-transform: uppercase;
+      .job-offer__card {
+        background-color: $color-white;
+        margin-right: 20px;
+        .job-offer__logo {
+          padding: 30px 40px;
+          img {
+            margin: auto;
+          }
+        }
+        h6 {
+          text-transform: uppercase;
+          text-align: center;
+        }
+
+        .job-offer__content {
+          display: flex;
+          justify-content: space-between;
+          padding: 10px 20px;
+          align-items: center;
+          span {
+            color: rgb(117, 117, 117);
+          }
+          .job-offer__favourite {
+            i {
+              font-size: 16px;
+              color: $color-white;
+              background-color: $color-red;
+              padding: 10px;
+              cursor: pointer;
+              border-radius: 50%;
+            }
+          }
+        }
       }
     }
   }

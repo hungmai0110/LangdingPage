@@ -13,12 +13,84 @@ header {
 
       .header__menu {
         display: flex;
+        align-items: center;
         .header__list {
           ul {
             display: flex;
-            li {
-              padding-right: 10px;
+            margin-bottom: 0;
+            @include maxWidth(992px) {
+              display: none;
             }
+            li {
+              position: relative;
+              padding-right: 10px;
+              font-size: 13px;
+              color: #555555;
+              margin-right: 16px;
+              cursor: pointer;
+
+              span {
+                margin-left: 4px;
+              }
+              .dropdown-list {
+                position: absolute;
+                display: block;
+                background-color: $color-black;
+                padding: 0;
+                display: none;
+                li {
+                  color: #fff;
+                  padding: 5px 5px;
+                  &:hover {
+                    color: aqua;
+                  }
+                }
+              }
+              &:hover .dropdown-list {
+                display: block;
+              }
+            }
+          }
+        }
+        .btn-sign {
+          color: $color-white;
+          background-color: $color-red;
+          font-size: 14px;
+          padding: 6px 10px;
+        }
+
+        .btn-sidebar {
+          position: relative;
+          background-color: $color-red;
+          padding: 0px 10px;
+          font-size: 22px;
+          margin-left: 10px;
+          color: #fff;
+          cursor: pointer;
+          display: none;
+          @include maxWidth(992px) {
+            display: block;
+          }
+
+          .menu-sidebar {
+            position: absolute;
+            top: 34px;
+            right: 0px;
+            display: none;
+            background-color: $color-black;
+            font-size: 14px;
+            padding: 0;
+            li {
+              padding: 15px;
+              width: 150px;
+              &:hover {
+                color: $color-red;
+              }
+            }
+          }
+
+          .menu-sidebar-block {
+            display: block;
           }
         }
       }

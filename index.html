@@ -40,15 +40,46 @@
           <div class="header__menu">
             <div class="header__list">
               <ul>
-                <li>BROWSE JOBS</li>
-                <li>EMPLOYERS</li>
-                <li>CANDIDATES</li>
-                <li>PRODUCTS</li>
-                <li>NEWS</li>
-                <li>PAGES</li>
+                <li>
+                  BROWSE JOBS
+                  <span><i class="fa-solid fa-angle-down"></i></span>
+                  <ul class="dropdown-list">
+                    <li>Jobs Listing</li>
+                    <li>Job Page</li>
+                    <li>Jobs By Cities</li>
+                    <li>Jobs By Types</li>
+                  </ul>
+                </li>
+                <li>
+                  EMPLOYERS <span><i class="fa-solid fa-angle-down"></i></span>
+                </li>
+                <li>
+                  CANDIDATES <span><i class="fa-solid fa-angle-down"></i></span>
+                </li>
+                <li>
+                  PRODUCTS <span><i class="fa-solid fa-angle-down"></i></span>
+                </li>
+                <li>
+                  NEWS <span><i class="fa-solid fa-angle-down"></i></span>
+                </li>
+                <li>
+                  PAGES <span><i class="fa-solid fa-angle-down"></i></span>
+                </li>
               </ul>
             </div>
-            <div class="btn">SIGN IN</div>
+            <div class="btn-sign">SIGN IN</div>
+
+            <div class="btn-sidebar">
+              <i class="fa-solid fa-bars"></i>
+              <ul class="menu-sidebar">
+                <li class="option">Browse Jobs</li>
+                <li class="option"><span>Employers</span></li>
+                <li class="option"><span>Candidates</span></li>
+                <li class="option"><span>Products</span></li>
+                <li class="option"><span>News</span></li>
+                <li class="option"><span>Pages</span></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -67,17 +98,28 @@
           </div>
 
           <div class="job-search__options">
-            <div class="job-search__keywords">
-              <input type="text" placeholder="Search Keywords" />
+            <div class="row">
+              <div class="col-lg-10">
+                <div class="row">
+                  <div class="col-lg-4 job-search__keywords">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search Keywords" />
+                  </div>
+                  <div class="col-lg-4 selection">
+                    <select name="specialisms">
+                      <option value="1">All specialisms</option>
+                      <option value="2">Acountancy</option>
+                    </select>
+                  </div>
+
+                  <div class="col-lg-4 job-search__location">
+                    <input type="text" placeholder="All Location" />
+                    <i class="fa-solid fa-bullseye"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 btn-search">FIND JOB</div>
             </div>
-            <select name="specialisms">
-              <option value="1">All specialisms</option>
-              <option value="2">Acountancy</option>
-            </select>
-            <div class="job-search__location">
-              <input type="text" placeholder="All Location" />
-            </div>
-            <div class="btn">FIND JOB</div>
           </div>
         </div>
       </div>
@@ -87,37 +129,45 @@
     <div class="job-info">
       <div class="container">
         <div class="job-info__container">
-          <div class="job-info__card job-info__card--career">
-            <div class="job-info_content">
-              <h2>Job Career</h2>
-              <p>
-                Far much that one rank beheld bluebird after outside ignobly
-                allegedly more when.
-              </p>
+          <div class="row">
+            <div class="col-lg-4 col-md-12">
+              <div class="job-info__card job-info__card--career">
+                <div class="job-info_content">
+                  <h2>Job Career</h2>
+                  <p>
+                    Far much that one rank beheld bluebird after outside ignobly
+                    allegedly more when.
+                  </p>
+                </div>
+                <div class="btn__view btn__view--blue">VIEW ALL</div>
+              </div>
             </div>
-            <div class="btn__view btn__view--blue">VIEW ALL</div>
-          </div>
 
-          <div class="job-info__card job-info__card--member">
-            <div class="job-info_content">
-              <h2>Membership</h2>
-              <p>
-                Far much that one rank beheld bluebird after outside ignobly
-                allegedly more when.
-              </p>
+            <div class="col-lg-4 col-md-12">
+              <div class="job-info__card job-info__card--member">
+                <div class="job-info_content">
+                  <h2>Membership</h2>
+                  <p>
+                    Far much that one rank beheld bluebird after outside ignobly
+                    allegedly more when.
+                  </p>
+                </div>
+                <div class="btn__view btn__view--black">VIEW ALL</div>
+              </div>
             </div>
-            <div class="btn__view btn__view--black">VIEW ALL</div>
-          </div>
 
-          <div class="job-info__card job-info__card--post">
-            <div class="job-info_content">
-              <h2>Post A Vacany</h2>
-              <p>
-                Far much that one rank beheld bluebird after outside ignobly
-                allegedly more when.
-              </p>
+            <div class="col-lg-4 col-md-12">
+              <div class="job-info__card job-info__card--post">
+                <div class="job-info_content">
+                  <h2>Post A Vacany</h2>
+                  <p>
+                    Far much that one rank beheld bluebird after outside ignobly
+                    allegedly more when.
+                  </p>
+                </div>
+                <div class="btn__view btn__view--purple">VIEW ALL</div>
+              </div>
             </div>
-            <div class="btn__view btn__view--purple">VIEW ALL</div>
           </div>
         </div>
       </div>
@@ -138,7 +188,7 @@
 
           <div class="job-categories__list">
             <div class="row">
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-md-6">
                 <div class="job-categories__card">
                   <div class="job-categories__image">
                     <i class="fa-solid fa-plane"></i>
@@ -152,7 +202,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-md-6">
                 <div class="job-categories__card">
                   <div class="job-categories__image">
                     <i class="fa-solid fa-plane"></i>
@@ -166,7 +216,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-md-6">
                 <div class="job-categories__card">
                   <div class="job-categories__image">
                     <i class="fa-solid fa-plane"></i>
@@ -180,7 +230,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-md-6">
                 <div class="job-categories__card">
                   <div class="job-categories__image">
                     <i class="fa-solid fa-plane"></i>
@@ -194,9 +244,8 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-3">
+
+              <div class="col-lg-3 col-md-6">
                 <div class="job-categories__card">
                   <div class="job-categories__image">
                     <i class="fa-solid fa-plane"></i>
@@ -210,7 +259,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-md-6">
                 <div class="job-categories__card">
                   <div class="job-categories__image">
                     <i class="fa-solid fa-plane"></i>
@@ -224,7 +273,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-md-6">
                 <div class="job-categories__card">
                   <div class="job-categories__image">
                     <i class="fa-solid fa-plane"></i>
@@ -238,7 +287,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-md-6">
                 <div class="job-categories__card">
                   <div class="job-categories__image">
                     <i class="fa-solid fa-plane"></i>
@@ -252,9 +301,8 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-3">
+
+              <div class="col-lg-3 col-md-6">
                 <div class="job-categories__card">
                   <div class="job-categories__image">
                     <i class="fa-solid fa-plane"></i>
@@ -268,7 +316,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-md-6">
                 <div class="job-categories__card">
                   <div class="job-categories__image">
                     <i class="fa-solid fa-plane"></i>
@@ -282,7 +330,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-md-6">
                 <div class="job-categories__card">
                   <div class="job-categories__image">
                     <i class="fa-solid fa-plane"></i>
@@ -296,7 +344,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-md-6">
                 <div class="job-categories__card">
                   <div class="job-categories__image">
                     <i class="fa-solid fa-plane"></i>
@@ -339,46 +387,550 @@
                 />
               </div>
               <h6>Computer Operator and Information Tech</h6>
-
               <hr />
+              <div class="job-offer__content">
+                <span>
+                  <i class="fa-solid fa-calendar-days"></i>
+                  1 years ago
+                </span>
+                <div class="job-offer__favourite">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
             </div>
             <div class="job-offer__card">
               <div class="job-offer__logo">
                 <img
-                  src="https://jobcareer.chimpgroup.com/jobstreet/wp-content/uploads/wp-jobhunt-users/employer-logo-06-180x135.png"
+                  src="https://jobcareer.chimpgroup.com/jobstreet/wp-content/uploads/wp-jobhunt-users/employer-logo-07-180x135.png"
                   alt="logo"
                 />
               </div>
               <h6>Computer Operator and Information Tech</h6>
-
               <hr />
+              <div class="job-offer__content">
+                <span>
+                  <i class="fa-solid fa-calendar-days"></i>
+                  1 years ago
+                </span>
+                <div class="job-offer__favourite">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
             </div>
             <div class="job-offer__card">
               <div class="job-offer__logo">
                 <img
-                  src="https://jobcareer.chimpgroup.com/jobstreet/wp-content/uploads/wp-jobhunt-users/employer-logo-06-180x135.png"
+                  src="https://jobcareer.chimpgroup.com/jobstreet/wp-content/uploads/wp-jobhunt-users/employer-logo-08-180x135.png"
                   alt="logo"
                 />
               </div>
               <h6>Computer Operator and Information Tech</h6>
-
               <hr />
+              <div class="job-offer__content">
+                <span>
+                  <i class="fa-solid fa-calendar-days"></i>
+                  1 years ago
+                </span>
+                <div class="job-offer__favourite">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
             </div>
             <div class="job-offer__card">
               <div class="job-offer__logo">
                 <img
-                  src="https://jobcareer.chimpgroup.com/jobstreet/wp-content/uploads/wp-jobhunt-users/employer-logo-06-180x135.png"
+                  src="https://jobcareer.chimpgroup.com/jobstreet/wp-content/uploads/wp-jobhunt-users/employer-logo-09-180x135.png"
                   alt="logo"
                 />
               </div>
               <h6>Computer Operator and Information Tech</h6>
-
               <hr />
+              <div class="job-offer__content">
+                <span>
+                  <i class="fa-solid fa-calendar-days"></i>
+                  1 years ago
+                </span>
+                <div class="job-offer__favourite">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+            </div>
+            <div class="job-offer__card">
+              <div class="job-offer__logo">
+                <img
+                  src="https://jobcareer.chimpgroup.com/jobstreet/wp-content/uploads/wp-jobhunt-users/employer-logo-10-180x135.png"
+                  alt="logo"
+                />
+              </div>
+              <h6>Computer Operator and Information Tech</h6>
+              <hr />
+              <div class="job-offer__content">
+                <span>
+                  <i class="fa-solid fa-calendar-days"></i>
+                  1 years ago
+                </span>
+                <div class="job-offer__favourite">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- video-intro -->
+    <div class="video-intro">
+      <div class="container">
+        <div class="video-intro__container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="video-intro__content">
+                <h2>We Work Hard</h2>
+                <img
+                  src="https://jobcareer.chimpgroup.com/jobstreet/wp-content/themes/jobcareer/assets/images/zigzag-img.png"
+                  alt="line"
+                />
+                <div class="video-desc">
+                  <p>
+                    Based on the analysis of the results and User Cases, I had a
+                    brainstorming session to figure out which new functions,
+                    which renewed old functions, and which visual approach,
+                    could satisfy users needs.
+                  </p>
+                  <p>
+                    After the brainstorming session, the most important points
+                    were selected and sorted by two categories: Functional and
+                    Visual.
+                  </p>
+                </div>
+
+                <div class="btn-play">
+                  <i class="fa-regular fa-circle-play"></i>
+                  <div class="btn-watch">Watch Video</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="video-intro__watch">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/on3mxgg4J6w?feature=oembed"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- latest-news -->
+    <div class="latest-news">
+      <div class="container">
+        <div class="latest-news__container">
+          <div class="latest-news__title">
+            <h2>Latest News</h2>
+            <img
+              src="https://jobcareer.chimpgroup.com/jobstreet/wp-content/themes/jobcareer/assets/images/zigzag-img.png"
+              alt="line"
+            />
+            <p>See who's hiring in your area. Find a job close to home.</p>
+          </div>
+          <div class="latest-news__list">
+            <div class="row">
+              <div class="col-lg-6 col-sm-12">
+                <div class="latest-news__card">
+                  <div class="latest-news__image">
+                    <img
+                      src="https://jobcareer.chimpgroup.com/jobstreet/wp-content/uploads/jobline-blog-5-3-200x200.jpg"
+                      alt="house"
+                    />
+                  </div>
+                  <div class="latest-news__content">
+                    <div class="latest-news__user">
+                      <i class="fa-solid fa-user"></i>
+                      <p>jobcareer-admin</p>
+                    </div>
+                    <h6>Need Candidates For This Position</h6>
+                    <p>
+                      Ravenously while stridently coughed far promiscuously
+                      below jeez much yikes bland that salamander cunningly..
+                    </p>
+                    <div class="latest-news__social">
+                      <div class="face">
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </div>
+                      <div class="twit">
+                        <i class="fa-brands fa-twitter"></i>
+                      </div>
+                      <div class="gg">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                      </div>
+                      <div class="plus"><i class="fa-solid fa-plus"></i></div>
+                      <div class="calander">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <div>NOVEMBER 23, 2010</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="latest-news__comment">0</div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <div class="latest-news__card">
+                  <div class="latest-news__image">
+                    <img
+                      src="https://jobcareer.chimpgroup.com/jobstreet/wp-content/uploads/jobline-blog-6-3-200x200.jpg"
+                      alt="house"
+                    />
+                  </div>
+                  <div class="latest-news__content">
+                    <div class="latest-news__user">
+                      <i class="fa-solid fa-user"></i>
+                      <p>jobcareer-admin</p>
+                    </div>
+                    <h6>Looking For Motivated Producer</h6>
+                    <p>
+                      Ravenously while stridently coughed far promiscuously
+                      below jeez much yikes bland that salamander cunningly..
+                    </p>
+                    <div class="latest-news__social">
+                      <div class="face">
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </div>
+                      <div class="twit">
+                        <i class="fa-brands fa-twitter"></i>
+                      </div>
+                      <div class="gg">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                      </div>
+                      <div class="plus"><i class="fa-solid fa-plus"></i></div>
+                      <div class="calander">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <div>NOVEMBER 23, 2010</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="latest-news__comment">0</div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <div class="latest-news__card">
+                  <div class="latest-news__image">
+                    <img
+                      src="https://jobcareer.chimpgroup.com/jobstreet/wp-content/uploads/jobline-blog-7-3-200x200.jpg"
+                      alt="house"
+                    />
+                  </div>
+                  <div class="latest-news__content">
+                    <div class="latest-news__user">
+                      <i class="fa-solid fa-user"></i>
+                      <p>jobcareer-admin</p>
+                    </div>
+                    <h6>Opportunities At Jobs Line</h6>
+                    <p>
+                      Ravenously while stridently coughed far promiscuously
+                      below jeez much yikes bland that salamander cunningly..
+                    </p>
+                    <div class="latest-news__social">
+                      <div class="face">
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </div>
+                      <div class="twit">
+                        <i class="fa-brands fa-twitter"></i>
+                      </div>
+                      <div class="gg">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                      </div>
+                      <div class="plus"><i class="fa-solid fa-plus"></i></div>
+                      <div class="calander">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <div>NOVEMBER 23, 2010</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="latest-news__comment">0</div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <div class="latest-news__card">
+                  <div class="latest-news__image">
+                    <img
+                      src="https://jobcareer.chimpgroup.com/jobstreet/wp-content/uploads/jobline-blog-7-3-200x200.jpg"
+                      alt="house"
+                    />
+                  </div>
+                  <div class="latest-news__content">
+                    <div class="latest-news__user">
+                      <i class="fa-solid fa-user"></i>
+                      <p>jobcareer-admin</p>
+                    </div>
+                    <h6>Employment In New York</h6>
+                    <p>
+                      Ravenously while stridently coughed far promiscuously
+                      below jeez much yikes bland that salamander cunningly..
+                    </p>
+                    <div class="latest-news__social">
+                      <div class="face">
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </div>
+                      <div class="twit">
+                        <i class="fa-brands fa-twitter"></i>
+                      </div>
+                      <div class="gg">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                      </div>
+                      <div class="plus"><i class="fa-solid fa-plus"></i></div>
+                      <div class="calander">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <div>NOVEMBER 23, 2010</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="latest-news__comment">0</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- statis-->
+    <div class="statis">
+      <div class="container">
+        <div class="statis__container">
+          <div class="statis__title">
+            <h2>Comprehensive Employment Statistics</h2>
+            <img
+              src="https://jobcareer.chimpgroup.com/jobstreet/wp-content/themes/jobcareer/assets/images/zigzag-img.png"
+              alt="line"
+            />
+          </div>
+          <div class="statis__list">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 statis__item">
+                <h3>53841</h3>
+                <p>Awesome Company</p>
+              </div>
+              <div class="col-lg-3 col-md-6 statis__item">
+                <h3>36003</h3>
+                <p>Posted Job List</p>
+              </div>
+              <div class="col-lg-3 col-md-6 statis__item">
+                <h3>203285</h3>
+                <p>Register Candidate</p>
+              </div>
+              <div class="col-lg-3 col-md-6 statis__item">
+                <h3>53942</h3>
+                <p>Registered Employer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- partner -->
+    <div class="partner">
+      <div class="container">
+        <div class="partner__container">
+          <div class="partner__title">
+            <h2>We Love To Work With Us</h2>
+            <img
+              src="https://jobcareer.chimpgroup.com/jobstreet/wp-content/themes/jobcareer/assets/images/zigzag-img.png"
+              alt="line"
+            />
+          </div>
+          <div class="partner__logo">
+            <div class="row">
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="partner__item">
+                  <img
+                    src="http://jobcareer.chimpgroup.com/jobstreet/wp-content/uploads/client-logo-01.jpg"
+                    alt="company1"
+                  />
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="partner__item">
+                  <a href="">
+                    <img
+                      src="http://jobcareer.chimpgroup.com/jobstreet/wp-content/uploads/client-logo-01-02.jpg"
+                      alt="company1"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="partner__item">
+                  <img
+                    src="http://jobcareer.chimpgroup.com/jobstreet/wp-content/uploads/client-logo-01-03.jpg"
+                    alt="company1"
+                  />
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="partner__item">
+                  <img
+                    src="http://jobcareer.chimpgroup.com/jobstreet/wp-content/uploads/client-logo-01-04.jpg"
+                    alt="company1"
+                  />
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="partner__item">
+                  <img
+                    src="http://jobcareer.chimpgroup.com/jobstreet/wp-content/uploads/client-logo-01-05.jpg"
+                    alt="company1"
+                  />
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="partner__item">
+                  <img
+                    src="http://jobcareer.chimpgroup.com/jobstreet/wp-content/uploads/client-logo-01-06.jpg"
+                    alt="company1"
+                  />
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="partner__item">
+                  <img
+                    src="http://jobcareer.chimpgroup.com/jobstreet/wp-content/uploads/client-logo-01-07.jpg"
+                    alt="company1"
+                  />
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="partner__item">
+                  <img
+                    src="http://jobcareer.chimpgroup.com/jobstreet/wp-content/uploads/client-logo-01-08.jpg"
+                    alt="company1"
+                  />
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="partner__item">
+                  <img
+                    src="http://jobcareer.chimpgroup.com/jobstreet/wp-content/uploads/client-logo-01-09.jpg"
+                    alt="company1"
+                  />
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="partner__item">
+                  <img
+                    src="http://jobcareer.chimpgroup.com/jobstreet/wp-content/uploads/client-logo-01-10.jpg"
+                    alt="company1"
+                  />
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="partner__item">
+                  <img
+                    src="http://jobcareer.chimpgroup.com/jobstreet/wp-content/uploads/client-logo-01-11.jpg"
+                    alt="company1"
+                  />
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="partner__item">
+                  <img
+                    src="http://jobcareer.chimpgroup.com/jobstreet/wp-content/uploads/client-logo-01-12.jpg"
+                    alt="company1"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-top">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 footer-col">
+                <div class="footer-logo">
+                  <img
+                    src="http://jobcareer.chimpgroup.com/jobstreet/wp-content/uploads/footer-jobstreet-logo.png"
+                    alt="logo"
+                  />
+                </div>
+                <div class="footer-address">
+                  <p>DieSachbearbeiter Schönhauser Allee 167c 10435</p>
+                  <p>Berlin Newland, German+49 30 47373795</p>
+                  <p>info@chimpgroup.com</p>
+                </div>
+                <div class="footer-social">
+                  <div class="footer-social-logo">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </div>
+                  <div class="footer-social-logo">
+                    <i class="fa-brands fa-twitter"></i>
+                  </div>
+                  <div class="footer-social-logo">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </div>
+                  <div class="footer-social-logo">
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                  <div class="footer-social-logo">
+                    <i class="fa-brands fa-youtube"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 footer-col">
+                <div class="footer-quest">
+                  <h6>FREQUENTLY ASKED QUESTIONS</h6>
+                  <div class="footer-quest-text">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <p>Consectetur adipiscing elit?</p>
+                  </div>
+                  <div class="footer-quest-text">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <p>Integer cursus turpis ut sem laoreet?</p>
+                  </div>
+                  <div class="footer-quest-text">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <p>Dolor sit amet consectetur?</p>
+                  </div>
+                  <div class="footer-quest-text">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <p>Consectetur adipiscing elit?</p>
+                  </div>
+                  <div class="footer-quest-text">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <p>Integer cursus turpis ut sem laoreet?</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 footer-col">
+                <div class="footer-letter">
+                  <h6>NEWSLETTER</h6>
+                  <p>
+                    We may send you information about related events, webinars,
+                    products and services which we information about related
+                    believe.
+                  </p>
+                  <div class="footer-email">
+                    <input type="text" placeholder="Enter your email address" />
+                    <div><i class="fa-solid fa-angle-right"></i></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- script bootstrap  -->
     <script

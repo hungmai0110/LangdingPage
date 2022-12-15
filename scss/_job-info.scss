@@ -2,10 +2,8 @@
   .container {
     .job-info__container {
       padding: 110px 0;
-      display: flex;
 
       .job-info__card {
-        margin: 0 15px;
         color: $color-white;
         padding: 20px 100px 20px 20px;
         background-size: cover;
@@ -25,6 +23,7 @@
           width: 40%;
           text-align: center;
           font-size: 13px;
+          cursor: pointer;
         }
 
         .btn__view--blue {
@@ -43,6 +42,9 @@
       }
       .job-info__card--member {
         background-image: url(http://jobcareer.chimpgroup.com/jobstreet/wp-content/uploads/jobstreet-services-02.jpg);
+        @include maxWidth(992px) {
+          margin: 20px 0;
+        }
       }
       .job-info__card--post {
         background-image: url(http://jobcareer.chimpgroup.com/jobstreet/wp-content/uploads/jobstreet-services-03.jpg);

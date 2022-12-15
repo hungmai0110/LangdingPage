@@ -1,0 +1,95 @@
+footer {
+  background-color: #272c2f;
+  .footer-container {
+    .footer-top {
+      padding: 50px 0;
+      .footer-col {
+        margin-bottom: 100px;
+        .footer-logo {
+          margin-bottom: 25px;
+        }
+        .footer-address {
+          font-size: 14px;
+          color: #a4a9b8;
+          margin-bottom: 20px;
+          font-weight: 500;
+          p {
+            line-height: 23px;
+          }
+        }
+        .footer-social {
+          display: flex;
+          .footer-social-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 35px;
+            width: 35px;
+            border: 1.5px solid #55a747;
+            border-radius: 50%;
+            margin-right: 10px;
+            color: #55a747;
+            cursor: pointer;
+          }
+        }
+        .footer-quest {
+          font-size: 13px;
+          h6 {
+            color: #a4a9b8;
+            margin-bottom: 16px;
+          }
+          .footer-quest-text {
+            display: flex;
+            color: #8e9198;
+            align-items: center;
+            margin-bottom: 8px;
+            p {
+              margin-left: 10px;
+              font-weight: 500;
+              line-height: 23px;
+              margin-bottom: 0;
+            }
+          }
+        }
+        .footer-letter {
+          h6 {
+            color: #a4a9b8;
+            margin-bottom: 16px;
+          }
+          p {
+            color: #8e9198;
+            font-size: 13px;
+          }
+        }
+
+        .footer-email {
+          display: flex;
+          input {
+            padding: 15px 0 15px 15px;
+            width: 70%;
+            background-color: #fff;
+            border-radius: 4px;
+            &:focus {
+              outline: none;
+            }
+          }
+          div {
+            background-color: #55a747;
+            width: 43px;
+            height: 43px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto 15px;
+            cursor: pointer;
+
+            i {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

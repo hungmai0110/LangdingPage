@@ -6,6 +6,9 @@
   .container {
     .job-search__container {
       padding: 190px 0 280px;
+      @include maxWidth(576px) {
+        padding: 80px 0 80px;
+      }
 
       .job-search__content {
         text-align: center;
@@ -14,6 +17,9 @@
         h1 {
           font-size: 62px;
           margin-bottom: 10px;
+          @include maxWidth(576px) {
+            font-size: 40px;
+          }
         }
         p {
           margin-bottom: 10px;
@@ -21,10 +27,65 @@
       }
 
       .job-search__options {
-        display: flex;
-        justify-content: space-between;
         padding: 30px;
         background-color: #59a8c6;
+
+        .job-search__keywords {
+          background-color: $color-white;
+          color: #757575;
+          display: flex;
+          align-items: center;
+          height: 35px;
+          input {
+            border: none;
+            margin-left: 10px;
+          }
+        }
+
+        .selection {
+          @include maxWidth(992px) {
+            padding: 0;
+          }
+          select {
+            width: 100%;
+            color: #757575;
+            height: 37px;
+            padding: 0 12px;
+            @include maxWidth(992px) {
+              padding: 0;
+              margin: 20px 0;
+            }
+          }
+        }
+
+        .job-search__location {
+          position: relative;
+          background-color: $color-white;
+          color: #757575;
+          display: flex;
+          align-items: center;
+          height: 35px;
+
+          @include maxWidth(992px) {
+            margin-bottom: 20px;
+          }
+          input {
+            border: none;
+            width: 100%;
+          }
+          i {
+            position: absolute;
+            right: 20px;
+          }
+        }
+
+        .btn-search {
+          color: $color-white;
+          background-color: $color-red;
+          font-size: 16px;
+          padding: 5px 10px;
+          text-align: center;
+        }
       }
     }
   }

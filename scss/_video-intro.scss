@@ -1,0 +1,43 @@
+.video-intro {
+  .video-intro__container {
+    padding: 110px 0 10px;
+    margin-bottom: 25px;
+
+    .video-intro__content {
+      .video-desc {
+        padding-top: 15px;
+        p {
+          color: #757575;
+          font-size: 14px;
+          margin-bottom: 40px;
+        }
+      }
+
+      .btn-play {
+        display: flex;
+        align-items: center;
+        color: $color-white;
+        @include maxWidth(992px) {
+          margin-bottom: 30px;
+        }
+        i {
+          background-color: #cf2e2e;
+          padding: 15px 10px;
+        }
+        .btn-watch {
+          background-color: $color-red;
+          font-size: 16px;
+          padding: 11px 20px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .video-intro__watch {
+      height: 100%;
+      @include maxWidth(992px) {
+        height: 300px;
+      }
+    }
+  }
+}
